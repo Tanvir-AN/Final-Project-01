@@ -1,0 +1,276 @@
+/*
+====================================
+			Master styleheet
+====================================
+	Template name: Minimo
+	Author: Nayeem
+	Author: https//nayeem.com
+	Descriptions:PHD TO HTML PARACTISE
+	Version: 1.0.0
+	Tag: Blag
+*/
+/*
+====================================
+			Table of contents
+====================================
+	1 Typrography
+	2 Header
+	3 Blog
+	4 Sign-up
+	5 Button
+	6 Footer
+font-family: 'Playfair Display', serif;
+font-family: 'Inconsolata', monospace;
+font-family: 'Ubuntu', sans-serif;
+*/
+/*
+====================================
+			Typrography
+====================================
+*/
+@import url('https://fonts.googleapis.com/css?family=Inconsolata|Playfair+Display:400,400i,700,900|Ubuntu:300&display=swap');
+*{
+	box-sizing: border-box;
+}
+body{
+	margin: 0;
+	padding: 0;
+	font-family: 'Playfair Display', serif;
+	color: #626262;
+	font-size: 14px;
+	font-weight: 400;
+}
+h1,h2,h3,h4,h5,h6{
+	font-size: 30px;
+	font-weight: 700;
+	line-height: 35px;
+	margin: 0;
+}
+p{
+	margin: 0;
+}
+/*
+====================================
+			Header
+====================================
+*/
+.container{
+	width: 88%;
+	margin: 0 auto;
+}
+.header{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 40px 0;
+}
+.logo{
+	width: 10%;
+}
+.logo img{
+	width: 100%
+}
+.menu{
+	width: 70%
+}
+.menu ul{
+	text-align: right;
+}
+.menu ul li{
+	display: inline-block;
+}
+.menu ul li a{
+	text-decoration: none;
+	text-transform: uppercase;
+	color: #626262;
+	padding: 0 61px;
+}
+.menu ul li:nth-child(4n) a{
+	padding-right: 0;
+}
+.menu ul li a:hover{
+	color: #000000;
+	transition: .3s all ease-in-out;
+}
+.images{
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center center;
+}
+.baner{
+	background-image: url(../images/banner.jpg);
+	height: 600px;
+}
+/*
+====================================
+			Blog
+====================================
+*/
+#blog{
+	width: 75%;
+	margin: 0 auto;
+}
+.blog{
+margin: 100px 0 0;
+}
+.catagories{
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: 300;
+	line-height: 19px;
+	text-transform: uppercase;
+	color: #b4ad9e;
+}
+.title{
+	padding: 30px 0;
+}
+.content{
+	line-height: 19px;
+	padding-top: 10px;
+}
+.comment{
+	padding-top: 50px;
+}
+.Lifestyle{
+	margin: 130px 0;
+}
+.Lifestyle, .photodiary{
+	display: flex;
+	justify-content: space-between;
+}
+.photodiary{
+	margin-bottom: 130px;
+}
+.Lifestyle-items, .photodiary-items{
+	width: 47%;
+}
+.blog-catagories{
+	padding-top: 30px;
+}
+.blog-img{
+	height: 280px;
+}
+.images-one{
+	background-image: url(../images/img01.jpg);
+}
+.images-two{
+	background-image: url(../images/img02.jpg);
+}
+.images-three{
+	background-image: url(../images/img03.jpg);
+}
+.images-four{
+	background-image: url(../images/img04.jpg);
+}
+.images-five{
+	background-image: url(../images/img05.jpg);
+}
+.images-six{
+	background-image: url(../images/img06.jpg);
+}
+/*
+====================================
+			Sign-up
+====================================
+*/
+#newslatter{
+	background-color: #f0f0f0;
+	padding: 70px 0;
+	margin: 0 auto;
+}
+.newslatter{
+	text-align: center;
+	width: 28%;
+	margin: 0 auto;
+	padding: 30px 0;
+}
+
+input[type=email]{
+	width: 100%;
+	border: none;
+	padding: 10px 45px 10px 5px;
+	background-color: transparent;
+}
+input[type=email]:focus{
+	outline: none;
+}
+input[type=email]::placeholder{
+	font-size: 14px;
+	color: #626262;
+	background-color: transparent;
+}
+.form{
+	border-bottom: 1px solid #626262;
+	position: relative;
+}
+.submit{
+	position: absolute; 
+	border: none; 
+	top: 11px;
+	right: 0;
+	cursor: pointer;
+}
+.submit:focus{
+	outline: none;
+}
+
+/*
+====================================
+			Button
+====================================
+*/
+.button{
+	text-align: center;
+	margin-bottom: 500px;
+}
+.button button{
+	border: none;
+	background-color: transparent;
+	font-size: 20px;
+	text-transform: capitalize;
+	border: 1px solid #626262;
+	padding: 20px 30px;
+	cursor: pointer;
+	color: #626262; 
+}
+.button button:focus{
+	outline: none;
+}
+.button button:hover{
+	background-color: #626262;
+	color: #ffffff;
+	transition: .3s all ease-in-out;
+}
+/*
+====================================
+			Footer
+====================================
+*/
+footer{
+	
+	background-color: #f0f0f0;
+	
+}
+.footer{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;
+	margin: 0 auto;
+	padding: 50px 0;
+}
+.trems ul{
+	padding: 0;
+}
+.trems li, .social li{
+	display: inline-block;
+}
+.trems a, .social a{
+	color: #000000;
+	text-decoration: none;
+	padding: 0 15px;
+}
+.trems ul li:nth-child(1n) a{
+	padding-left: 0;
+}
+.social ul li:nth-child(4n) a{
+padding-right: 0;
+}
